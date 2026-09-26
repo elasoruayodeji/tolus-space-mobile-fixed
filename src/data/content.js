@@ -6,7 +6,6 @@ export const site = {
   subheadline: "Your calm in the chaos of Lagos. Modern, Minimalist, Fully Serviced.",
   phoneDisplay: "08142485613",
   phoneE164: "+2348142485613",
-  whatsapp: "https://wa.me/2348142485613",
   address: "No. 8 Dogo Majekodunmi Street, Soluyi, Gbagada, Lagos",
   mapsQuery: "No. 8 Dogo Majekodunmi Street, Soluyi, Gbagada, Lagos",
   nightlyRate: null,
@@ -14,6 +13,22 @@ export const site = {
   rateNote: "Nightly and extended-stay rates available on request",
   bookingFootnote: "Fastest response — direct booking, no service fees",
   heroImage: "bedroom-1-a.jpg"
+};
+
+const whatsappEnquiryText = "Hello Tolu's Space, I saw your website and I'd like to enquire about booking the apartment. My dates are: ";
+const whatsappEnquiryQuery = `?text=${encodeURIComponent(whatsappEnquiryText)}`;
+
+export const contact = {
+  whatsapp: {
+    uk: {
+      number: "+44 7962 356853",
+      link: `https://wa.me/447962356853${whatsappEnquiryQuery}`
+    },
+    nigeria: {
+      number: "+234 708 919 1951",
+      link: `https://wa.me/2347089191951${whatsappEnquiryQuery}`
+    }
+  }
 };
 
 export const about = {
@@ -52,7 +67,3 @@ export const navItems = [
   { label: "About", path: "/about" },
   { label: "Contact", path: "/contact" }
 ];
-
-export const bookingMessage = "Hello Tolu's Space, I would like to enquire about booking the 2-bedroom apartment in Soluyi, Gbagada. Please share availability and the current nightly/extended-stay rates. Thank you.";
-
-export const whatsappUrl = `${site.whatsapp}?text=${encodeURIComponent(bookingMessage)}`;

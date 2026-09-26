@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import { AnimatePresence, motion } from 'motion/react';
-import { navItems, site, whatsappUrl } from '../data/content';
+import { navItems, site, contact } from '../data/content';
 import Icon from './Icons';
 import Button from './Button';
 import './navbar.css';
@@ -17,14 +17,14 @@ export default function Navbar() {
       <nav className="nav__links" aria-label="Primary navigation">
         {navItems.map((item) => <NavLink key={item.path} to={item.path} className={({ isActive }) => isActive ? 'active' : ''}>{item.label}</NavLink>)}
       </nav>
-      <div className="nav__action"><Button href={whatsappUrl} icon="phone">Book a stay</Button></div>
+      <div className="nav__action"><Button href={contact.whatsapp.nigeria.link} icon="phone">Book a stay</Button></div>
       <button className="nav__toggle" aria-label={open ? 'Close menu' : 'Open menu'} aria-expanded={open} onClick={() => setOpen(v => !v)}><Icon name={open ? 'close' : 'menu'} /></button>
     </div>
     <AnimatePresence>
       {open && <motion.div className="mobile-menu" initial={{ opacity: 0, y: -8 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -8 }} transition={{ duration: 0.2 }}>
         <div className="container mobile-menu__inner">
           {navItems.map((item) => <NavLink key={item.path} to={item.path} onClick={() => setOpen(false)}>{item.label}</NavLink>)}
-          <Button href={whatsappUrl} icon="phone">Book a stay</Button>
+          <Button href={contact.whatsapp.nigeria.link} icon="phone">Book a stay</Button>
         </div>
       </motion.div>}
     </AnimatePresence>

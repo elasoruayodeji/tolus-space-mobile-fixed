@@ -17,7 +17,6 @@ export default function Contact() {
       </SectionReveal>
       <SectionReveal delay={.08}>
         <div className="contact-grid">
-          <a href={`tel:${site.phoneE164}`}><Icon name="phone" /><span><small>Phone</small><strong>{site.phoneDisplay}</strong></span></a>
           <a href={contact.whatsapp.uk.link}><Icon name="phone" /><span><small>WhatsApp · UK</small><strong>{contact.whatsapp.uk.number}</strong></span></a>
           <a href={contact.whatsapp.nigeria.link}><Icon name="phone" /><span><small>WhatsApp · Nigeria</small><strong>{contact.whatsapp.nigeria.number}</strong></span></a>
           <div><Icon name="pin" /><span><small>Address</small><strong>{site.address}</strong></span></div>

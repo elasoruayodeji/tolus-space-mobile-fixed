@@ -4,8 +4,6 @@ export const site = {
   tagline: "Escape to Serenity.",
   headline: "Stylish 2BR in Soluyi, Gbagada",
   subheadline: "Your calm in the chaos of Lagos. Modern, Minimalist, Fully Serviced.",
-  phoneDisplay: "08142485613",
-  phoneE164: "+2348142485613",
   address: "No. 8 Dogo Majekodunmi Street, Soluyi, Gbagada, Lagos",
   mapsQuery: "No. 8 Dogo Majekodunmi Street, Soluyi, Gbagada, Lagos",
   nightlyRate: null,

@@ -10,7 +10,6 @@ export default function Footer() {
       <div className="footer__column"><p className="footer__label">Explore</p>{navItems.map(item => <Link key={item.path} to={item.path}>{item.label}</Link>)}</div>
       <div className="footer__column">
         <p className="footer__label">Contact</p>
-        <a href={`tel:${site.phoneE164}`}>{site.phoneDisplay}</a>
         <a href={contact.whatsapp.uk.link}>WhatsApp · UK</a>
         <a href={contact.whatsapp.nigeria.link}>WhatsApp · Nigeria</a>
         <span>{site.address}</span>
